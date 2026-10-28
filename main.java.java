@@ -164,3 +164,21 @@ public class Main {
         teclado.close();
     }
 }
+
+/* 
+ * RESPUESTAS CONCEPTUALES
+ * 1. ¿Por qué dos objetos de la misma clase pueden almacenar valores diferentes en sus atributos?
+ * Respuesta: Porque la clase funciona como un molde. Al usar new Servidor(), el programa reserva un 
+ * espacio de memoria independiente para cada servidor. Como son instancias separadas en 
+ * la memoria, cambiar el atributo de un objeto no afecta a los del otro.
+ * 
+ * 2. ¿Qué diferencia existe entre Servidor b = a; y Servidor b = new Servidor();?
+ * Respuesta: Servidor b = a; no crea un objeto nuevo; hace que la variable b apunte exactamente 
+ * al mismo objeto en la memoria que a (si modificas b, modificas a). Por otro lado, 
+ * Servidor b = new Servidor(); crea un objeto completamente nuevo e independiente de a en la memoria.
+ * 
+ * 3. ¿Por qué es importante comprobar datosValidos() antes de calcular el porcentaje?
+ * Respuesta: Porque si los datosTotales son 0, al hacer la división estaríamos 
+ * intentando dividir por cero, lo que provocaría un error grave y pararía el programa o 
+ * generaría porcentajes imposibles.
+ */
